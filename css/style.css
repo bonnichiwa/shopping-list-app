@@ -34,17 +34,27 @@ h3 {
   height: 6em;
   opacity: .35;
   margin-top: 8em;
-  margin-bottom: -8.5em;
+  margin-bottom: -9em;
 }
 
 .intro-1 {
   font-family: 'Amatic SC';
   margin-bottom: -0.25em;
-  padding-top: -8em;
+  padding-top: -9em;
   color: white;
-  text-shadow: 2px 3px lightsteelblue;
+  text-shadow: 2px 3px lightseagreen;
   font-size: 4em;
 }
+
+.intro-2 {
+  font-family: 'Josefin Slab';
+  color: white;
+  text-shadow: 1px 2px lightseagreen;
+  font-size: 1em;
+  padding-top: -1em;
+}
+
+
 
 /* Search Section */
 
@@ -70,6 +80,12 @@ h3 {
   font-size: .6em;
   font-family: 'Rock Salt';
 }
+
+input[type=checkbox]:checked + label {
+/*  background-color: lightsalmon;*/
+  text-decoration: line-through;
+  color: gray;
+}
 /* Add Item Section */
 
 .add-items {
@@ -87,7 +103,7 @@ h3 {
 .credit {
   font-family: 'Josefin Slab';
   color: white;
-  text-shadow: 1px 2px lightseagreen;
+  text-shadow: 1px 1px lightseagreen;
   font-size: 1em;
   padding-top: 1em;
 }
