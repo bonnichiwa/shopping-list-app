@@ -6,6 +6,17 @@ body {
   margin: 0 auto;
 }
 
+section {
+  background-color: peachpuff;
+}
+
+h3 {
+  font-family: 'Josefin Slab';
+  padding-top: 2em;
+}
+
+/* Header Section */
+
 .shopping-intro {
   background-image: url('../images/shopping.jpg');
   background-repeat: no-repeat;
@@ -14,10 +25,18 @@ body {
   border-bottom: solid 1em paleturquoise;
 }
 
+.intro-opacity {
+  background-color: white;
+  height: 8em;
+  opacity: .35;
+  margin-top: 7em;
+  margin-bottom: -10em;
+}
+
 .intro-1 {
   font-family: 'Amatic SC';
   margin-bottom: -0.25em;
-  padding-top: 1.5em;
+  padding-top: -10em;
   color: white;
   text-shadow: 2px 3px lightsteelblue;
   font-size: 4em;
@@ -26,6 +45,39 @@ body {
 .intro-2 {
   font-family: 'Josefin Slab';
   color: white;
-  text-shadow: 1px 2px lightpink;
+  text-shadow: 2px 1px lightpink;
   font-size: 1em;
 }
+
+/* Search Section */
+
+.search {
+  padding-bottom: 2em;
+}
+
+/* Shopping List Section */
+
+.table-items {
+  padding-bottom: 2em;
+  background-color: moccasin;
+}
+
+.table-items > label {
+  font-family: 'Rock Salt';
+  font-size: .75em;
+}
+
+/* Add Item Section */
+
+.add-items {
+  padding-bottom: 2em;
+}
+
+/* Footer Section */
+
+.shopping-end {
+  margin-top: 1em;
+  background-color: paleturquoise;
+  height: 50px;
+}
+
