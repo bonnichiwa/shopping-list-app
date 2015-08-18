@@ -7,12 +7,16 @@ body {
 }
 
 section {
-  background-color: peachpuff;
+  background-color: lightsalmon;
 }
 
 h3 {
   font-family: 'Josefin Slab';
+  font-weight: 700;
+  font-size: 1.5em;
   padding-top: 2em;
+  color: white;
+  text-shadow: 1px 2px chocolate;
 }
 
 /* Header Section */
@@ -27,26 +31,19 @@ h3 {
 
 .intro-opacity {
   background-color: white;
-  height: 8em;
+  height: 6em;
   opacity: .35;
-  margin-top: 7em;
-  margin-bottom: -10em;
+  margin-top: 8em;
+  margin-bottom: -8.5em;
 }
 
 .intro-1 {
   font-family: 'Amatic SC';
   margin-bottom: -0.25em;
-  padding-top: -10em;
+  padding-top: -8em;
   color: white;
   text-shadow: 2px 3px lightsteelblue;
   font-size: 4em;
-}
-
-.intro-2 {
-  font-family: 'Josefin Slab';
-  color: white;
-  text-shadow: 2px 1px lightpink;
-  font-size: 1em;
 }
 
 /* Search Section */
@@ -59,7 +56,7 @@ h3 {
 
 .table-items {
   padding-bottom: 2em;
-  background-color: moccasin;
+  background-color: peachpuff;
 }
 
 .table-items > label {
@@ -79,5 +76,13 @@ h3 {
   margin-top: 1em;
   background-color: paleturquoise;
   height: 50px;
+}
+
+.credit {
+  font-family: 'Josefin Slab';
+  color: white;
+  text-shadow: 1px 2px lightseagreen;
+  font-size: 1em;
+  padding-top: 1em;
 }
 
