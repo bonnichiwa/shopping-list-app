@@ -1,19 +1,27 @@
 $(document).ready(function() {
+  sortList();
+  crossOff();
+  showDelete();
+});
+
+function sortList() {
   $(".table-list").sortable({ 
     axis: "y" 
   });
+}
+
+function crossOff() {
+$("li").click(function() {
+  $(this).toggleClass("cross-out");
 });
+}
 
-// $(".table-items h3").mouseenter(function(){
-//   alert("nice");
-// });
+function showDelete() {
+$("li").mouseenter(function(){
+  $(this).children('.delete').show();
+})
+.mouseleave(function(){
+  $(this).children('.delete').hide();
+});
+}
 
-// $(".table-list").hover(function() {
-//   $('.delete').show();
-// }, function () {
-//   $('.delete').hide();
-// });
-
-
-// $('.table-list').on('mouseenter', 'li', function(){$(this).children('.delete').toggleClass('show');});
-//   $('.table-list').on('mouseleave', 'li', function(){$(this).children('.delete').toggleClass('show');});
