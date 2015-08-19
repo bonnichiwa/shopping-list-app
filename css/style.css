@@ -92,8 +92,7 @@ h3 {
 .checked {
   float: left;
   margin-right: 2em;
-  background-color: yellow;
-  border-radius: 50%;
+  background-image: url('../images/div-purple.svg') no-repeat;
   width: 28px;
   height: 28px;
 }
@@ -102,9 +101,15 @@ h3 {
   display: none;
   float: right;
   background-color: red;
-/*  border-radius: 50%;*/
   width: 28px;
   height: 28px;
+}
+
+hr {
+  border: none;
+  border-top:3px dotted white;
+  width: 100%;
+  height: .1em;
 }
 
 .table-items p {
@@ -122,6 +127,14 @@ h3 {
 
 .add-items {
   padding-bottom: 2em;
+}
+
+#error {
+  display: none;
+  color: white;
+  margin-top: 1em;
+  text-shadow: 1px 1px red;
+  font-family: 'Josefin Slab';
 }
 
 /* Footer Section */

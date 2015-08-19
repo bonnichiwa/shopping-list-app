@@ -22,7 +22,7 @@
 
   <section class="search">
     <h3>Search For an Item:</h3>
-    <input type="text" placeholder="Search for an item here">
+    <input type="text" id="search-item" placeholder="Search for an item here">
     <button type="submit">Find!</button>
   </section>
 
@@ -33,33 +33,40 @@
         <div class="checked"></div>
         Eggs
         <div class="delete"></div>
+        <hr>
       </li>
 
       <li>
         <div class="checked"></div>
         Milk
         <div class="delete"></div>
+        <hr>
       </li>
 
       <li>
         <div class="checked"></div>
         Honey
         <div class="delete"></div>
+        <hr>
       </li>
 
       <li>
         <div class="checked"></div>
         Puppies
         <div class="delete"></div>
+        <hr>
       </li>
     </ul>
     <p>Feel free to drag and rearrange the list!</p>
   </section>
 
   <section class="add-items">
+    <form>
     <h3> Add an Item: </h3>
-    <input type="text" placeholder="Add item here">
-    <button type="submit">Add!</button>
+    <input type="text" id="items-todo" placeholder="Hit 'Enter' When Done!"/>
+    <div id="error">You need to put something here!</div>
+    </form>
+
   </section>
 
   <footer class="shopping-end">
