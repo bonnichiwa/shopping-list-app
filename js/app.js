@@ -1,13 +1,19 @@
 $(document).ready(function() {
-  $("tr").sortable({ 
+  $(".table-list").sortable({ 
     axis: "y" 
   });
 });
 
-$('.table-list').on('mouseenter', 'tr', function(){
-  $(this).children('.delete').toggleClass('show');
-});
+// $(".table-items h3").mouseenter(function(){
+//   alert("nice");
+// });
 
-$('.table-list').on('mouseleave', 'tr', function(){
-  $(this).children('.delete').toggleClass('show');
-});
+// $(".table-list").hover(function() {
+//   $('.delete').show();
+// }, function () {
+//   $('.delete').hide();
+// });
+
+
+// $('.table-list').on('mouseenter', 'li', function(){$(this).children('.delete').toggleClass('show');});
+//   $('.table-list').on('mouseleave', 'li', function(){$(this).children('.delete').toggleClass('show');});

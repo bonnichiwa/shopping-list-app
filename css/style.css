@@ -69,11 +69,30 @@ h3 {
   background-color: peachpuff;
 }
 
-.table-items > table {
+.table-list{
   margin-left: auto;
   margin-right: auto;
   font-family: 'Rock Salt';
   font-size: .75em;
+  max-width: 17em;
+}
+
+.table-list > li {
+  text-align: justify;
+  margin: 0 auto;
+  list-style-type: none; 
+}
+
+.table-list > li:hover {
+  cursor: pointer;
+}
+
+.delete {
+  display: none;
+  float: right;
+  background-color: red;
+  width: 10px;
+  height: 10px;
 }
 
 .table-items p {
@@ -82,10 +101,10 @@ h3 {
 }
 
 input[type=checkbox]:checked + label {
-/*  background-color: lightsalmon;*/
   text-decoration: line-through;
   color: gray;
 }
+
 /* Add Item Section */
 
 .add-items {

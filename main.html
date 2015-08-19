@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Shadows+Into+Light|Josefin+Slab:400,700|Amatic+SC|Rock+Salt">
+
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/app.js"></script>
   <title>Shopping List App</title>
 </head>
 
@@ -24,44 +28,23 @@
 
   <section class="table-items">
     <h3>Shopping Items:</h3>
-    <table>
-      <tr>
-        <td id="tdh-1">
-          <input type='checkbox' name='item-name' id="h-1">
-          <label for="h-1">Eggs</label>
-        </td>
-        <td>
-          <button type="submit">Delete</button>
-        </td>
-      </tr>
-      <tr>
-        <td id="tdh-2">
-          <input type='checkbox' name='item-quantity' id="h-2" checked>
-          <label>Milk</label>
-        </td>
-        <td>
-          <button type="submit">Delete</button>
-        </td>
-      </tr>
-      <tr>
-        <td id="tdh-3">
-          <input type='checkbox' name='item-quantity' id="h-3" checked>
-          <label for="h-3">Honey</label>
-        </td>
-        <td>
-          <button type="submit">Delete</button>
-        </td>
-      </tr>
-      <tr>
-        <td id="tdh-4">
-          <input type='checkbox' name='item-quantity' id="h-4">
-          <label for="h-4">Puppies</label>
-        </td>
-        <td>
-          <button type="subit">Delete</button>
-        </td>
-      </tr>
-    </table>
+    <ul class="table-list">
+      <li>Eggs
+        <div class="delete"></div>
+      </li>
+
+      <li>Milk
+        <div class="delete"></div>
+      </li>
+
+      <li>Honey
+        <div class="delete"></div>
+      </li>
+
+      <li>Puppies
+        <div class="delete"></div>
+      </li>
+    </ul>
     <p>Feel free to drag and rearrange the list!</p>
   </section>
 
