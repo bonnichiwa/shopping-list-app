@@ -67,8 +67,9 @@ function addEntry() {
 }
 
 function deleteEntry() {
-  $('li').on('click', 'img', function () {
-    $(this).parent('.shopping-item').remove();
+  $('ul').on('click', '.delete', function(e) {
+    e.preventDefault();
+      $(this).parent().remove();
   });
 }
 
