@@ -32,17 +32,17 @@ function sortList() {
 }
 
 function crossOff() {
-$("li").click(function() {
+$("ul").on('click','li', function() {
   $(this).toggleClass("cross-out");
 });
 }
 
 function showDelete() {
-$("li").mouseenter(function(){
+$("ul").on('mouseenter', 'li', function(){
   $(this).children('.delete').show();
 })
 
-.mouseleave(function(){
+.on('mouseleave','li', function(){
   $(this).children('.delete').hide();
 });
 }
@@ -58,8 +58,8 @@ function addEntry() {
         return false
       } else {
         $('#error').hide();
-        $('ul').append('<li><div class="checked"></div><span>' +  entry_value + '</span><img class="delete" src="images/x_mark.png" height="28px" width="28px"><hr></li>');
-        
+        $('ul').append('<li class="shopping-item"><div class="checked"></div><span>' +  entry_value + '</span><img class="delete" src="images/x_mark.png" height="28px" width="28px"><hr></li>');
+
     $('input#items-todo').val("");
     return false
     }
@@ -67,8 +67,8 @@ function addEntry() {
 }
 
 function deleteEntry() {
-  $('img').click(function () {
-    $(this).parent('li').remove();
+  $('li').on('click', 'img', function () {
+    $(this).parent('.shopping-item').remove();
   });
 }
 
