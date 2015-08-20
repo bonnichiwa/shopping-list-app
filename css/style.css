@@ -92,17 +92,13 @@ h3 {
 .checked {
   float: left;
   margin-right: 2em;
-  background-image: url('../images/div-purple.svg') no-repeat;
-  width: 28px;
-  height: 28px;
+  max-width: 28px;
+  max-height: 28px;
 }
 
 .delete {
   display: none;
   float: right;
-  background-color: red;
-  width: 28px;
-  height: 28px;
 }
 
 hr {

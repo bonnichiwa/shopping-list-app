@@ -4,6 +4,7 @@ $(document).ready(function() {
   showDelete();
   addEntry();
   deleteEntry();
+  clearList();
 });
 
 function sortList() {
@@ -44,7 +45,7 @@ function addEntry() {
         return false
       } else {
         $('#error').hide();
-        $('ul').append('<li>' + '<div class="checked"></div>' +  $('input#items-todo').val() + '<div class="delete"></div>' + '<hr>' + '</li>');
+        $('ul').append('<li>' + '<div class="checked"></div>' +  $('input#items-todo').val() + '<img class="delete" src="images/x_mark.png" height="28px" width="28px">' + '<hr>' + '</li>');
     $('input#items-todo').val("");
     return false
     }
@@ -52,9 +53,19 @@ function addEntry() {
 }
 
 function deleteEntry() {
-  $('.delete').click(function () {
+  $('img').click(function () {
     $(this).parent('li').remove();
   });
+}
+
+function clearList() {
+$('#clear-list').click(function(){
+    if (confirm("Are you sure you want to clear your current shopping list?")) {
+      $(".table-list").empty();
+    } else {
+      return false;
+    }
+});
 }
 
 
