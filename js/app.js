@@ -8,21 +8,24 @@ $(document).ready(function() {
   clearList();
 });
 
+jQuery.expr[':'].Contains = function(a,i,m){
+    return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())>=0;
+};
+
 function findItem() {
-  $('#search-item').keyup(function(){
-
-    var that = this, $allListElements = $('ul > li');
-
-    var $matchingListElements = $allListElements.filter(function(i, li){
-        var listItemText = $(li).text().toUpperCase(), 
-            searchText = that.value.toUpperCase();
-        return ~listItemText.indexOf(searchText);
-    });
-
-    $allListElements.hide();
-    $matchingListElements.show();
-
-});
+    $("#search-item").change(function() {
+      var filter = $(this).val();
+      if(filter) {
+        $("ul").find("span:not(:Contains("+filter+"))").parent().slideUp();
+        $("ul").find("span:Contains("+filter+")").parent().slideDown();
+      } else {
+        $("ul").find("li").slideDown();
+      } 
+      return false;
+    })
+    .keyup(function () {
+      $(this).change();
+  });
 }
 
 function sortList() {
